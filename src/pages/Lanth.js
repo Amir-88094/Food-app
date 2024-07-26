@@ -9,7 +9,7 @@ export default function MyOrder() {
         const userEmail = localStorage.getItem('userEmail');
         if (userEmail) {
             try {
-                const response = await fetch(`${Process.env.BACKEND_URL}/api/myOrderData`, {
+                const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/myOrderData`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

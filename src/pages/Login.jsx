@@ -9,7 +9,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(credentials);
-    const response = await fetch(`${Process.env.BACKEND_URL}/api/loginUser`, {
+    const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/loginUser`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

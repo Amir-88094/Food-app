@@ -7,7 +7,7 @@ export default function MyOrder() {
 
   const fetchMyOrder = async () => {
     console.log(localStorage.getItem("userEmail"));
-    await fetch(`${Process.env.BACKEND_URL}/api/myOrderData`, {
+    await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/myOrderData`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
