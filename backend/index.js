@@ -1,7 +1,14 @@
 const express = require('express');
+const cors=require('cors');
 const app = express();
 const port = 5000;
 const mongoDB = require('./db');
+
+app.use(cors({
+    origin:["https://food-app-frontend-sigma.vercel.app"]
+}))
+
+
 mongoDB();
 app.use(express.json())
 
