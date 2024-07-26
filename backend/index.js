@@ -17,14 +17,14 @@ app.use(
     })
   );
 
-app.use((req,res,next) => {
-    res.setHeader("Access-Control-Allow-Origin", ["http://localhost:3000","https://food-app-frontend-sigma.vercel.app"]);
-    res.header(
-        "Access-Control-Allow-Headers",
-        "Origin, X-Requested-With, Content-Type, Accept"
-    );
-    next();
-})
+// app.use((req,res,next) => {
+//     res.setHeader("Access-Control-Allow-Origin", ["http://localhost:3000","https://food-app-frontend-sigma.vercel.app"]);
+//     res.header(
+//         "Access-Control-Allow-Headers",
+//         "Origin, X-Requested-With, Content-Type, Accept"
+//     );
+//     next();
+// })
 
 app.use("/api", require("./Router/Usercreate"));
 
