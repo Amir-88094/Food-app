@@ -11,7 +11,7 @@ const Home = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/foodData");
+      const response = await axios.get(`${Process.env.BACKEND_URL}/api/foodData`);
       setdata(response.data);
       console.log(response.data); // Log the data received from the server
       //console.log(curdata);

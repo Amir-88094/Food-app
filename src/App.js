@@ -9,7 +9,7 @@ import Home from './pages/Home';
 import Cart from './pages/Cart';
 import { CartProvider } from './Components/ContextReducer';
 import MyOrder from './pages/MyOrder';
-import Lanth from "./pages/Lanth";
+// import Lanth from "./pages/Lanth";
 const App = () => {
   return (
     <>
