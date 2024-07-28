@@ -35,7 +35,7 @@ const Home = () => {
       <div style={{ backgroundColor: "lightblue" }}>
         <div className="container">
           {curdata?.length !== 0 ? (
-            curdata[1].map((category) => (
+            curdata[1]?.map((category) => (
               <div>
                 <div style={{ textAlign: "center" }}>
                   <p className="h2">{category.CategoryName}</p>
